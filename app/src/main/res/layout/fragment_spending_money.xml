@@ -47,6 +47,7 @@
             android:backgroundTint="#3FC5F5"
             android:drawableLeft="@drawable/ic_baseline_attach_money_24"
             android:hint="Nhập Tiền"
+            android:inputType="number"
             android:outlineSpotShadowColor="@color/black"
             android:paddingLeft="20dp"
             android:shadowColor="@color/black"

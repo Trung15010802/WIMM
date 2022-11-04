@@ -2,7 +2,7 @@ package com.example.wimm.fragment;
 
 public class DataUser {
     private String date;
-    UserList list;
+    private UserList list;
 
     public DataUser() {
     }
