@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_new_spending"
+            android:icon="@drawable/pay"
+            android:title="@string/nav_new_spending" />
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/pie_chart"
+            android:title="@string/nav_chart" />
+        <item
+            android:id="@+id/nav_history_spending"
+            android:icon="@drawable/history"
+            android:title="@string/nav_history_spending" />
+    </group>
+    <item android:title="@string/nav_account" >
+        <menu>
+            <item
+                android:id="@+id/nav_change_password"
+                android:icon="@drawable/padlock"
+                android:title="@string/nav_change_password" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/check_out"
+                android:title="@string/nav_Logout" />
+        </menu>
+    </item>
+</menu>

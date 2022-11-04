@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcakground_chitieu"
+    android:descendantFocusability="afterDescendants"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="295dp"
+        android:layout_height="158dp"
+        android:src="@drawable/chitieu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+
+        style="@style/BACKGROUNDSPENDING"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            style="@style/EDITTEXT"
+            android:id="@+id/edit_inpMoney"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3FC5F5"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:hint="Nhập Tiền"
+            android:outlineSpotShadowColor="@color/black"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/black"
+            android:textColor="#6B6B6B"
+            android:textColorHint="#cccccc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintHorizontal_weight=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166"
+            app:layout_constraintVertical_weight=".8"
+            app:layout_constraintWidth_percent="100"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/Sipnner_chieutieu"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:autofillHints="fkfkg"
+            android:backgroundTint="#3FC5F5"
+            android:dropDownWidth="wrap_content"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/black"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_inpMoney"
+            app:layout_constraintVertical_bias="0.059"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            style="@style/EDITTEXT"
+            android:id="@+id/edit_Date"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:backgroundTint="#3FC5F5"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/black"
+            android:text="Chọn Ngày"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sipnner_chieutieu"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/BUTTON"
+            android:id="@+id/saveImgButton"
+            android:layout_width="131dp"
+            android:layout_height="67dp"
+            android:background="@drawable/btn_save"
+            android:shadowColor="#BDBDBD"
+            android:text="Save"
+            android:textColor="#E7E6E6"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_Date"
+
+            app:layout_constraintVertical_bias="0.474" />
+
+        <TextView
+            style="@style/TEXT"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mục Chi Tiêu"
+            android:textColor="#EF2992EE"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="3dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

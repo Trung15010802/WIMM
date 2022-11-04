@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WIMM</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_new_spending">Chi tiêu mới</string>
+    <string name="nav_chart">Biểu đồ</string>
+    <string name="nav_history_spending">Lịch sử chi tiêu</string>
+    <string name="nav_account">Tài khoản</string>
+    <string name="nav_change_password">Đổi mật khẩu</string>
+    <string name="nav_Logout">Đăng xuất</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>
